@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-size: 100%;
+}
+
+body {
+    padding: 0rem;
+    background-color: white;
+    background: white;
+    font-family: 'Monda', sans-serif;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    margin-left: 0rem;
+    padding: 0px;
+    display: flex;
+    background-size: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nav-link {
+    padding: 0 1rem;
+    position: relative;
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: black;
+    padding-top: 0.1rem;
+    border-top: 0.125rem solid transparent;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.125rem solid transparent;
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.nav-link::after {
+    display: block;
+    content: "";
+    width: 100%;
+    margin-top: 0rem;
+    height: 0.25rem;
+    border-bottom: 5px solid black;
+    transition: 0;
+    transform: rotateY(90deg);
+}
+
+.nav-link:hover::after {
+    transform: rotateY(0deg);
+    transition: 0.7s;
+}
+.nav-link a:active,
+.nav-link a.active {
+    border-bottom: 5px solid black;
+}
+
+a:focus {
+    background-color: rgba(46, 46, 46, 0.521);
+    transition: 0.7s;
+    color: white;
+}
+
+.header {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.gubernator, .zam, .Wolverine, .spider_man, .ant_man {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+    /* box-shadow: 0 40px 80px 10px gray; */
+    margin: 10px;
+}
+
+p {
+    color: black;
+    margin: 8px;
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+.heading {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
